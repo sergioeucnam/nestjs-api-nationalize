@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.nestjs
+    ports:
+      - '10080:10080'
+    env_file:
+      - .env
